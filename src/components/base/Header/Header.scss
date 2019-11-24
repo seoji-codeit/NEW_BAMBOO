@@ -1,0 +1,31 @@
+.BaseHeader {
+  height: 6.4rem;
+  padding: 1.6rem;
+  background-color: #24292e;
+  display: flex;
+  align-items: center;
+  color: #ffffff;
+  &__title {
+    display: flex;
+    align-items: center;
+    background-color: hsla(0, 0%, 100%, 0.125);
+    height: 2.8rem;
+    margin-left: 1.6rem;
+    border-radius: 0.5rem;
+    color: #fff;
+    font-size: 1.4rem;
+    font-weight: 600;
+    padding: 0 0.8rem;
+  }
+  &__logo {
+    border-radius: 50%;
+    width: 3.2rem;
+    height: 3.2rem;
+  }
+  a {
+    margin-left: 1.6rem;
+    font-weight: 600;
+    color: #fff;
+    font-size: 1.4rem;
+  }
+}
