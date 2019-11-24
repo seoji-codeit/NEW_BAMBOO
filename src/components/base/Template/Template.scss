@@ -1,0 +1,9 @@
+.BaseTemplate {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  &__body {
+    display: flex;
+    flex: 1;
+  }
+}
