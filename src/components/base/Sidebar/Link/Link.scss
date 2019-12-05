@@ -1,0 +1,14 @@
+.BaseSidebarLink {
+  a {
+    display: inline-block;
+    margin-left: 0.3rem;
+    margin-top: 1.2rem;
+    cursor: pointer;
+    font-weight: 800;
+    font-size: 1.4rem;
+    color: #0366d6;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}

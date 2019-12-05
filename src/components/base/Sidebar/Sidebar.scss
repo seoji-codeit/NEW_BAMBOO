@@ -1,0 +1,62 @@
+@import "static/styles/utils.scss";
+
+.BaseSidebar {
+  display: none;
+  @include response(M) {
+    display: block;
+  }
+  overflow: auto;
+  position: sticky;
+  top: 0;
+  left: 0;
+  background-color: #fff;
+  width: 36rem;
+  height: 100vh;
+  border-right: 1px solid #e1e4e8;
+  padding: 3.6rem 2.4rem;
+  &__repo {
+    padding-bottom: 2rem;
+    border-bottom: 1px solid #d1d5da;
+    &__header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      h2 {
+        font-weight: 800;
+        margin: 0;
+      }
+      button {
+        border-radius: 0.5rem;
+        cursor: pointer;
+        outline: 0;
+        border: 0;
+        font-weight: 600;
+        color: #fff;
+        font-size: 1.2rem;
+        padding: 0.7rem 1rem;
+        background-image: linear-gradient(-180deg, #34d058, #28a745 90%);
+      }
+    }
+    &__github {
+      display: inline-block;
+      width: 100%;
+      margin-bottom: 0.5rem;
+      margin-top: 1rem;
+      border-radius: 0.3rem;
+      cursor: pointer;
+      font-size: 1.4rem;
+      padding: 0.8rem 0.6rem;
+      flex: 1;
+      border: 1px solid #d1d5da;
+      color: #d1d5da;
+      font-weight: 600;
+    }
+  }
+  &__dev {
+    margin-top: 1.6rem;
+    &__title {
+      font-weight: 800;
+      margin: 0;
+    }
+  }
+}

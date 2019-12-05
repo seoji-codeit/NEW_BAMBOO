@@ -1,0 +1,14 @@
+@import "static/styles/utils.scss";
+
+.AdTemplate {
+  display: none;
+  margin-top: 3.2rem;
+  padding-right: 1.6rem;
+  width: 35rem;
+  @include response(L) {
+    display: block;
+  }
+  @include media("<1200px") {
+    width: 30rem;
+  }
+}

@@ -1,12 +1,21 @@
+@import "static/styles/utils.scss";
+
 .BaseHeader {
   height: 6.4rem;
-  padding: 1.6rem;
+  padding: 1.6rem 4rem;
+  @include response(L) {
+    padding: 1.6rem;
+  }
   background-color: #24292e;
   display: flex;
   align-items: center;
+  justify-content: space-between;
   color: #ffffff;
   &__title {
-    display: flex;
+    display: none;
+    @include response(L) {
+      display: flex;
+    }
     align-items: center;
     background-color: hsla(0, 0%, 100%, 0.125);
     height: 2.8rem;
@@ -18,14 +27,84 @@
     padding: 0 0.8rem;
   }
   &__logo {
+    cursor: pointer;
     border-radius: 50%;
     width: 3.2rem;
     height: 3.2rem;
+    &:hover {
+      filter: grayscale(80%);
+    }
   }
-  a {
+  &__link {
+    display: none;
+    @include response(L) {
+      display: flex;
+    }
     margin-left: 1.6rem;
     font-weight: 600;
     color: #fff;
     font-size: 1.4rem;
+  }
+  &__codeit {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    @include response(L) {
+      margin-left: auto;
+    }
+    &:hover {
+      svg {
+        g {
+          circle {
+            fill: "#6c10fe";
+          }
+        }
+      }
+    }
+  }
+  &__sidebarBtn {
+    cursor: pointer;
+    outline: 0;
+    border: 0;
+    padding: 0;
+    background-color: initial;
+    display: flex;
+    flex-direction: column;
+    @include response(L) {
+      display: none;
+    }
+    span {
+      border-radius: 0.1rem;
+      display: block;
+      background-color: #fff;
+      height: 0.25rem;
+      width: 1.8rem;
+      & + * {
+        margin-top: 0.35rem;
+      }
+    }
+  }
+  &__dropdown {
+    display: flex;
+    @include response(L) {
+      display: none;
+    }
+    flex-direction: column;
+    padding: 1.6rem 4rem;
+    background-color: #24292e;
+    a {
+      padding: 0.8rem 0;
+      border-top: 1px solid hsla(0, 0%, 100%, 0.15);
+      width: 100%;
+      display: block;
+      font-weight: 600;
+      font-size: 1.4rem;
+      color: #fff;
+      line-height: 1.4;
+      &:hover {
+        color: hsla(0, 0%, 100%, 0.7);
+      }
+    }
   }
 }

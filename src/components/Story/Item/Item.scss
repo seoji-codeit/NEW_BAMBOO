@@ -1,0 +1,78 @@
+.StoryItem {
+  padding: 1.8rem 0;
+  display: flex;
+  flex-direction: column;
+  border-bottom: 1px solid #e1e4e8;
+  &__header {
+    display: flex;
+    align-items: center;
+    &__img {
+      border-radius: 0.3rem;
+    }
+    &__title {
+      font-size: 1.4rem;
+      margin: 0;
+      margin-left: 1rem;
+      & .Bold {
+        margin-left: 0;
+        font-weight: 600;
+      }
+    }
+    &__date {
+      margin-left: 0.5rem;
+      color: #6a737d;
+      font-size: 1.2rem;
+    }
+  }
+  &__content {
+    margin-top: 0.8rem;
+    margin-left: 4.2rem;
+    padding: 1.6rem;
+    background-color: #fff;
+    border: 0.1rem solid #d1d5da;
+    border-radius: 0.3rem;
+    &__header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      &__title {
+        margin-top: 0.6rem;
+      }
+      &__fbBtn {
+        border-radius: 0.5rem;
+        cursor: pointer;
+        outline: 0;
+        border: 0;
+        font-weight: 600;
+        color: #fff;
+        font-size: 1.2rem;
+        padding: 0.7rem 1rem;
+        background-color: rgb(73, 103, 173);
+      }
+    }
+    &__desc {
+      white-space: pre-wrap;
+      word-wrap: break-word;
+      margin: 0;
+      color: #586069;
+      font-size: 1.4rem;
+      line-height: 1.62;
+    }
+  }
+  &__imgs {
+    margin-top: 1.5rem;
+    max-width: 30rem;
+    .image-gallery-slide {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: none;
+      img {
+        height: auto;
+        width: auto;
+        max-height: 70rem;
+        max-width: 30rem;
+      }
+    }
+  }
+}

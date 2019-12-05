@@ -1,0 +1,36 @@
+@mixin response($point) {
+  // 320px
+  @if $point==XS {
+    @media (max-width: 20em) {
+      @content;
+    }
+  }
+
+  // 768px
+  @else if $point==M {
+    @media (min-width: 48em) {
+      @content;
+    }
+  }
+
+  // 992px
+  @else if $point==L {
+    @media (min-width: 62em) {
+      @content;
+    }
+  }
+
+  // 1200px
+  @else if $point==XL {
+    @media (min-width: 75em) {
+      @content;
+    }
+  }
+
+  // 1400px
+  @else if $point==XXL {
+    @media (min-width: 87.5em) {
+      @content;
+    }
+  }
+}
